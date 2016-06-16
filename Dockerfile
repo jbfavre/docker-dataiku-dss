@@ -12,7 +12,7 @@ RUN /usr/bin/apt-get update -yqq \
  && /usr/bin/apt-get upgrade --no-install-recommends -yqq \
  && /usr/bin/apt-get install --no-install-recommends -yqq locales curl libexpat1 \
                              nginx \
-                             openjdk-7-jre \
+                             openjdk-7-jre-headless \
                              python2.7 libpython2.7 libpng12-0 libfreetype6 libgfortran3 \
                              python2.7-dev \
                              r-base-dev libicu-dev libcurl4-openssl-dev libssl-dev libzmq3-dev pkg-config \
