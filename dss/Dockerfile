@@ -30,6 +30,6 @@ RUN /usr/bin/apt-get update -yqq \
 
 VOLUME /var/lib/dataiku
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-ADD ./dss/docker-entrypoint.sh /usr/local/bin
+ADD docker-entrypoint.sh /usr/local/bin
 
 EXPOSE 10000
