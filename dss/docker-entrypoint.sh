@@ -24,13 +24,7 @@ else
 fi
 
 if [ -f ${DATAIKUDATA}/bin/dss ]; then
-  /bin/su - dataiku -c "${DATAIKUDATA}/bin/dss start"
+  /bin/su - dataiku -c "${DATAIKUDATA}/bin/dss run"
 else
   exit 1
 fi
-
-echo "Dataiku Science Studio is now running"
-
-while true; do
-  sleep 1
-done
