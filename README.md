@@ -31,7 +31,7 @@ Clone or fork the repo, then:
 Basic setup for Dataiku Automation node.
 To keep docker image small, R is **not** installed.
 
-`dataiku-anode` docker image listens on port `TCP/11000`
+`dataiku-anode` docker image listens on port `TCP/11000`.  
 `dataiku-dss` is available on [https://hub.docker.com/r/jbfavre/dataiku-dss](https://hub.docker.com/r/jbfavre/dataiku-dss)
 
 ### Usage
@@ -54,7 +54,7 @@ Clone or fork the repo, then:
 Basic setup for Dataiku Scoring node (AKA API node).
 To keep docker image small, R is **not** installed.
 
-`dataiku-snode` docker image listens on port `TCP/12000`
+`dataiku-snode` docker image listens on port `TCP/12000`.  
 `dataiku-snode` is available on [https://hub.docker.com/r/jbfavre/dataiku-snode](https://hub.docker.com/r/jbfavre/dataiku-snode)
 
 ### Usage
