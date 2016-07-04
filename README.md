@@ -6,8 +6,10 @@ Docker images repository for:
 - [Dataiku Automation node](http://doc.dataiku.com/dss/latest/bundles/index.html)
 - [Dataiku API node](http://doc.dataiku.com/dss/latest/apinode/index.html) (AKA Scoring node)
 
-All images are built above `dataiku-dss-core` docker image.  
-This image is **not** to be ran directly. It's purpose is only to build the other ones.
+All images are built from `dataiku-dss-core` docker image.
+
+Docker image `dataiku-dss-core` is **not** supposed to be used directly.  
+It's only purpose is to help building the other ones.
 
 Docker images are pushed on [https://hub.docker.com/r/jbfavre/](https://hub.docker.com/r/jbfavre/)
 
@@ -31,7 +33,7 @@ Build from `dataiku-dss-core`
 Basic setup for [Dataiku Science Studio](http://doc.dataiku.com/dss/latest/index.html).  
 To keep docker image small, R is **not** installed.
 
-`dataiku-dss` docker image listens on port `TCP/10000`.  
+Docker image `dataiku-dss` listens on port `TCP/10000`.  
 `dataiku-dss` is available on [https://hub.docker.com/r/jbfavre/dataiku-dss](https://hub.docker.com/r/jbfavre/dataiku-dss)
 
 ### Usage
@@ -53,7 +55,7 @@ Build from `dataiku-dss-core`
 Basic setup for [Dataiku Automation node](http://doc.dataiku.com/dss/latest/bundles/index.html).  
 To keep docker image small, R is **not** installed.
 
-`dataiku-anode` docker image listens on port `TCP/11000`.  
+Docker image `dataiku-anode` listens on port `TCP/11000`.  
 `dataiku-dss` is available on [https://hub.docker.com/r/jbfavre/dataiku-dss](https://hub.docker.com/r/jbfavre/dataiku-dss)
 
 ### Usage
@@ -75,7 +77,7 @@ Build from `dataiku-dss-core`
 Basic setup for [Dataiku API node](http://doc.dataiku.com/dss/latest/apinode/index.html) (AKA Scoring node).  
 To keep docker image small, R is **not** installed.
 
-`dataiku-snode` docker image listens on port `TCP/12000`.  
+Docker image `dataiku-snode` listens on port `TCP/12000`.  
 `dataiku-snode` is available on [https://hub.docker.com/r/jbfavre/dataiku-snode](https://hub.docker.com/r/jbfavre/dataiku-snode)
 
 ### Usage
