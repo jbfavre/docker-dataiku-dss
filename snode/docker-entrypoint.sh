@@ -32,7 +32,7 @@ then
     echo "* DSS is not installed"
     echo "* No custom license file found"
     echo "** Installing Dataiku as API Node with community license"
-    DSSINSTALLOPT=""
+    DSSINSTALLOPT="-p 12000"
 elif [ ${IS_DSS_CONFIGURED} -eq 0 -a ${HAS_DSS_LICENSE} -eq 1 ];
 then
     echo "* DSS is not installed"

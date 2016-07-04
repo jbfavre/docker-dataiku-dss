@@ -29,7 +29,7 @@ then
     echo "* DSS is not installed"
     echo "* No custom license file found"
     echo "** Installing Dataiku as Automation Node with community license"
-    DSSINSTALLOPT=""
+    DSSINSTALLOPT="-p 11000"
 elif [ ${IS_DSS_CONFIGURED} -eq 0 -a ${HAS_DSS_LICENSE} -eq 1 ];
 then
     echo "* DSS is not installed"
