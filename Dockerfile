@@ -23,8 +23,9 @@ RUN /usr/bin/apt-get update -yqq \
     https://downloads.dataiku.com/public/studio/3.0.5/dataiku-dss-3.0.5.tar.gz \
  && /bin/su - dataiku -c '/bin/tar xzf /tmp/dataiku-dss.tar.gz -C /home/dataiku --strip-components=1' \
  && /bin/rm /tmp/dataiku-dss.tar.gz \
- && /bin/mkdir /var/lib/dataiku \
- && /bin/mkdir /etc/dataiku \
+ && /bin/mkdir -p /var/lib/dataiku \
+ && /bin/mkdir -p /etc/dataiku \
+ && /bin/mkdir -p /var/cache/dataiku \
  && /bin/chown -R dataiku: /var/lib/dataiku \
  && /bin/bash /tmp/debian_cleaner.sh
 
