@@ -20,7 +20,7 @@ RUN /usr/bin/apt-get update -yqq \
  && /bin/echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
  && /usr/sbin/locale-gen \
  && /usr/bin/curl -SL -o /tmp/dataiku-dss.tar.gz \
-    https://downloads.dataiku.com/public/studio/3.1.0/dataiku-dss-3.1.0.tar.gz \
+    https://downloads.dataiku.com/public/studio/3.1.1/dataiku-dss-3.1.1.tar.gz \
  && /bin/su - dataiku -c '/bin/tar xzf /tmp/dataiku-dss.tar.gz -C /home/dataiku --strip-components=1' \
  && /bin/rm /tmp/dataiku-dss.tar.gz \
  && /bin/mkdir -p /var/lib/dataiku \
