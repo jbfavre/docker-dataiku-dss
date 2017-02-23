@@ -4,6 +4,7 @@ MAINTAINER Jean Baptiste Favre <docker@jbfavre.org>
 ENV SHELL "/bin/bash"
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM 1
+ENV VERSION=4.0.1
 
 ADD scripts /tmp/
 
@@ -20,8 +21,9 @@ RUN /usr/bin/apt-get update -yqq \
  && /bin/echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
  && /usr/sbin/locale-gen \
  && /usr/bin/curl -SL -o /tmp/dataiku-dss.tar.gz \
-    https://downloads.dataiku.com/public/studio/3.1.1/dataiku-dss-3.1.1.tar.gz \
+    https://downloads.dataiku.com/public/studio/$VERSION/dataiku-dss-$VERSION.tar.gz \
  && /bin/su - dataiku -c '/bin/tar xzf /tmp/dataiku-dss.tar.gz -C /home/dataiku --strip-components=1' \
+ && /home/dataiku/scripts/install/install-deps.sh -yes \
  && /bin/rm /tmp/dataiku-dss.tar.gz \
  && /bin/mkdir -p /var/lib/dataiku \
  && /bin/mkdir -p /etc/dataiku \
