@@ -4,7 +4,7 @@ MAINTAINER Jean Baptiste Favre <docker@jbfavre.org>
 ENV SHELL "/bin/bash"
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM 1
-ENV VERSION=4.0.1
+ENV VERSION=4.0.3
 
 ADD scripts /tmp/
 
